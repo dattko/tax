@@ -5,19 +5,35 @@ input {
   font-size: 13px;
   height: 42px;
 }
-input::-moz-placeholder {
+
+input::-webkit-input-placeholder {
   color: #8D99A8;
 }
+
 input:-ms-input-placeholder {
   color: #8D99A8;
 }
+
+input::-ms-input-placeholder {
+  color: #8D99A8;
+}
+
 input::placeholder {
   color: #8D99A8;
 }
 
+input[type="checkbox"] {
+  accent-color: #9482ff;
+}
+
 .input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 8px;
 }
 
@@ -26,15 +42,25 @@ input::placeholder {
 }
 
 .input-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 42px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
+
 .input-contents input {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
+
 .input-contents .input-btn {
   font-size: 14px;
   padding: 0 38px;
@@ -44,23 +70,42 @@ input::placeholder {
 }
 
 .survey-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #0f1b2a;
 }
+
 .survey-box .survey-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50%;
   gap: 10px;
   height: 36px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 16px;
 }
+
 .survey-box .survey-input.survey-input-title {
   width: 100%;
   border-bottom: 1px solid #CDD3DD;
 }
-.survey-box .survey-input input[type=date] {
-  flex: 1;
+
+.survey-box .survey-input input[type='date'] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 28px;
 }
+
+@media (max-width: 768px) {
+  .input-contents input {
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=input-box.css.map */

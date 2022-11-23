@@ -296,7 +296,7 @@
         width: 5%;
         height: 640px;
         transition: all ease-in-out 1s;
-        background-image: url(/assert/img/team.png);
+        background-image: url(/Tax/assert/img/team.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -611,4 +611,17 @@
             }
         }
     }
+}
+
+@media (max-height:568px) {
+    .visual-sc{
+      height: 100vh;
+      .visual-title{
+      font-size: 25px;
+      }
+      .text{
+        font-size: 12px;
+      }
+    }  
+
 }

@@ -30,6 +30,12 @@
         align-items: center;
         flex: 1;
     }
+    .logout-btn-box{
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        font-size: 14px;
+    }
     &.pop-header{
         background-color: #fff;
         .header-inner{
@@ -132,7 +138,7 @@
         border-top: 1px solid #CDD3DD;
         display: flex;
         flex-direction: column;
-        gap: 23px;
+        gap: 8px;
         >.pop-sub-text{
             color: #414D5C;
         }
@@ -444,7 +450,7 @@ table {
         }    
         .input-btn{
             padding: 0 !important;
-            max-width: 90px;
+            max-width: 80px;
         }
         .pop-title{
             margin-bottom: 22px !important;
