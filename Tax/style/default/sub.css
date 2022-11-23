@@ -81,13 +81,23 @@
   background-color: #000;
 }
 
+.header.pop-header .mobile-header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .pop-section {
   background-color: #fff;
 }
 
 .pop-section .max-container {
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 105px;
   padding-bottom: 30px;
   gap: 20px;
 }
@@ -605,6 +615,9 @@ th, td {
 }
 
 @media (max-width: 768px) {
+  .pop-header {
+    border-bottom: 1px solid #CDD3DD;
+  }
   .pop-header .logo-box {
     display: none;
   }
@@ -617,10 +630,21 @@ th, td {
   }
   .pop-section .pop-title {
     margin-bottom: 22px !important;
+    font-size: 22px;
+  }
+  .pop-section .tab-state {
+    display: none;
   }
   .refund-box .refund-amount {
     font-size: 20px;
     font-weight: 400;
+  }
+  .noinfo-sc .noinfo-txt {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .noinfo-sc .noinfo-title {
+    margin-bottom: 0 !important;
   }
 }
 /*# sourceMappingURL=sub.css.map */
