@@ -24,8 +24,9 @@ document.addEventListener('scroll', () => {
    const nowHeight = window.scrollY; //윈도우높이
    const objAni = document.querySelectorAll('.obj-ani'); 
    const windowH = window.innerHeight / 1.1;
-   windowHeight.innerHTML = nowHeight + '/' +  windowH;//현재높이 표시
-   console.log(windowH)
+   //현재높이 표시
+   // windowHeight.innerHTML = nowHeight + '/' +  windowH;
+   // console.log(windowH)
    // 헤더부분
    if (nowHeight > headerHeight) {
       header.classList.add("white")
