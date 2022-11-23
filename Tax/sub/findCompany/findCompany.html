@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART 경정청구</title>
+    <link rel="stylesheet" href="/style/index.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header pop-header">
+            <div class="header-inner max-container">
+                <div class="logo-box">
+                    <a href="/index.html">
+                        <img src="/assert/icon/logo.svg" class="logo">
+                        <img src="/assert/icon/logo-w.svg" class="logo-w">
+                    </a>
+                </div>
+                <div class="header-btn-box">
+                    <button class="back-btn pc-hide" >
+                        <img src="/assert/icon/arrow-back.svg">
+                    </button>
+                    <button class="login-btn line-btn purple-btn mobile-hide">로그인</button>
+                </div>
+                <div class="gnb pop-gnb">
+                    <div class="mobile-gnb-btn">
+                        <span class="mobile-gnb-btn-line"></span>
+                        <span class="mobile-gnb-btn-line"></span>
+                        <span class="mobile-gnb-btn-line"></span>
+                    </div>
+                    <ul class="gnb-ul">
+                        <li class="gnb-li mobile-hide"><a href="/sub/listPage/qa.html">문의하기</a></li>
+                        <li class="gnb-li mobile-hide"><a href="/sub/listPage/notice.html">공지사항</a></li>
+                        <li class="gnb-li mobile-hide"><a href="/sub/linked/linked.html">인증관리</a></li>
+                        <li class="gnb-li mobile-hide"><a href="/sub/listPage/termsOfService.html">개인정보취급방침</a></li>
+                        <li class="gnb-li mobile-hide"><a href="/sub/listPage/privacyStatement.html">이용약관</a></li>
+                        
+                        <li class="gnb-li pc-hide"><a href="/index.html">서비스 소개</a></li>
+                        <li class="gnb-li pc-hide"><a href="/sub/listPage/notice.html">공지사항</a></li>
+                        <li class="gnb-li pc-hide"><a href="/sub/listPage/qa.html">문의하기</a></li>
+                        <li class="gnb-li pc-hide"><a href="/sub/listPage/privacyStatement.html">개인정보취급방침</a></li>
+                        <li class="gnb-li pc-hide"><a href="/sub/listPage/termsOfService.html">서비스 이용양관</a></li>
+                        <li class="gnb-li pc-hide login-hide"><a href="/sub/findCompany/findCompany.html">로그인</a></li>
+                        <li class="gnb-li pc-hide"><a href="/sub/listPage/myInfo.html">내회사정보 </a>
+                            <button class="logout-btn purple-btn">로그아웃</button></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="pop-section">
+            <div class="max-container">
+                <div class="back-btn">
+                    <button class="line-btn ">
+                        <img src="/assert/icon/left-arrow.svg">뒤로가기
+                    </button>
+                </div>
+                <div class="pop-section-contents">
+                    <!-- 탭 현황 -->
+                    <div class="tab-state">
+                        <span class="tab-num active">1</span>
+                        <span class="dots">
+                            <img src="/assert/icon/dots.svg">
+                        </span>
+                        <span class="tab-num">2</span>
+                        <span class="dots">
+                            <img src="/assert/icon/dots.svg">
+                        </span>
+                        <span class="tab-num">3</span>
+                        <span class="dots">
+                            <img src="/assert/icon/dots.svg">
+                        </span>
+                        <span class="tab-num">4</span>
+                        <span class="dots">
+                            <img src="/assert/icon/dots.svg">
+                        </span>
+                        <span class="tab-num">5</span>
+                    </div>
+                    <!-- 탭1 -->
+                    <div class="tab-box tab1 active">
+                        <span class="pop-title">
+                            회사 정보 찾기
+                        </span>
+                        <form class="pop-max-contents">
+                              <div class="input-box">
+                                <span class="input-title">회사명 또는 사업자등록번호</span>
+                                <div class="input-contents">
+                                    <input type="text" placeholder="검색해 주세요">
+                                    <button class="btn input-btn">조회</button>
+                                </div>
+                              </div>
+                        </form>
+                        <div class="no-search pop-sub-text">
+                            찾는 회사가 없으면 직접 입력해주세요. <span class="underscore purple">직접입력하기</span>
+                        </div>
+                        <div class="search-list-box">
+                            <span class="pop-sub-text line-grey">
+                                조회 결과에서 찾으시는 회사를 선택하세요.
+                            </span>
+                            <ul class="search-ul">
+                                <li class="search-li">
+                                    <div class="search-info">
+                                        <div class="row">
+                                            <span class="pop-text company-name">
+                                                스마트비즈(주 )
+                                            </span>
+                                            <span class="col-line"></span>
+                                            <span class="business-num pop-grey pop-text">573-81-02048</span>
+                                        </div>
+                                        <span class="name pop-sub-text">김태형</span>
+                                        <span class="address pop-sub-text pop-grey">[06657] 서울 서초구 반포대로21길 3 , IWHA B1(서초동, 이화빌딩)</span>
+                                    </div>
+                                    <button class="search-pick purple" onclick="tab1()">선택</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 탭2 -->
+                    <div class="tab-box tab2">
+                        <span class="pop-title">
+                            회사 정보 확인
+                        </span>
+                        <form class="pop-max-contents" onsubmit="return false;">
+                              <div iv class="input-box">
+                                <span class="input-title">회사명</span>
+                                <div class="input-contents">
+                                    <input type="text" placeholder="직접 입력해 주세요.">
+                                </div>
+                              </div>
+                              <div class="input-box">
+                                <span class="input-title">대표자명</span>
+                                <div class="input-contents">
+                                    <input type="text" placeholder="직접 입력해 주세요.">
+                                </div>
+                              </div>
+                              <div class="input-box">
+                                <span class="input-title">사업자등록번호</span>
+                                <div class="input-contents">
+                                    <input type="text" placeholder="직접 입력해 주세요.">
+                                </div>
+                              </div>
+                              <div class="input-box">
+                                <span class="input-title">법인등록번호</span>
+                                <div class="input-contents">
+                                    <input type="text" placeholder="직접 입력해 주세요.">
+                                </div>
+                              </div>
+                              <div class="input-box">
+                                <span class="input-title">주소</span>
+                                <div class="input-contents">
+                                    <input type="text" placeholder="주소 검색해 주세요">
+                                    <button class="btn input-btn">검색</button>
+                                </div>
+                                <div class="input-contents">
+                                    <input type="text" placeholder="상세주소">
+                                </div>
+                              </div>
+                              <button class="form-btn  line-btn  purple-btn" onclick="tab2()">등록하기</button>
+                        </form>
+                    </div>
+                    <!-- 탭3 -->
+                    <div class="tab-box tab3">
+                        <span class="pop-title">
+                            공인인증서 로그인
+                        </span>
+                        <!-- <div class="pop-max-contents out-contents"></div> -->
+                        <div class="certification-login-waiting">
+                            <div class="indicator">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <span class="indicator-text">
+                                <span class="purple">지난 5년간의 예상 환급금을 계산중입니다.</span> <br>
+                                잠시만 더 기다려주세요!
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 탭4 -->
+                    <div class="tab-box tab4">
+                        <span class="pop-title">
+                            예상 환급액 조회
+                        </span>
+                        <div class="pop-max-contents">
+                            <div class="refund-box">
+                                <span class="pop-sub-text">
+                                    경정청구 결과 나의 예상 환급액은
+                                </span>
+                                <div class="refund-amount">
+                                    <span class="purple">
+                                        <span class="count">
+                                            9,999,999,999
+                                        </span>원
+                                    </span><br>
+                                    환급 받을 수 있습니다.
+                                </div>
+                            </div>
+                            <div class="table-box">
+                                <span class="table-unit">단위 : 원</span>
+                                <div class="table">
+                                    <div class="table-row">
+                                        <div class="th">구분</div>
+                                        <div class="th">경정청구액</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="td">구분</div>
+                                        <div class="td">경정청구액</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="td">구분</div>
+                                        <div class="td">경정청구액</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="td">구분</div>
+                                        <div class="td">경정청구액</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="td">구분</div>
+                                        <div class="td">경정청구액</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="td">구분</div>
+                                        <div class="td">경정청구액</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="form-btn line-btn purple-btn" onclick="tab4()">경정청구 신청하기</button>
+                        </div>
+                    </div>
+                    <!-- 탭5 -->
+                    <div class="tab-box tab5">
+                        <span class="pop-title">
+                              위한 설문
+                        </span>
+                        <div class="pop-max-contents survey">
+                            <div class="survey-box">
+                                <label class="survey-input survey-input-title">
+                                    <span class="pop-sub-text">※ 이월결손금공제제한</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">이월결손금 공제제한 여부</span>
+                                    <input type="checkbox">
+                                </label>
+                            </div>
+                            <div class="survey-box">
+                                <label class="survey-input survey-input-title">
+                                    <span class="pop-sub-text">✔ 창업중소기업에 대한 법인세감면(조특법§6) </span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">창업중소기업업종해당여부</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">	수도권여부</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">	수도권과밀억제권역여부</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">	벤처기업여부</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">	벤쳐기업확인일자</span>
+                                    <input type="date">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">	벤쳐기업취소일자</span>
+                                    <input type="date">
+                                </label>
+                            </div>
+                            <div class="survey-box">
+                                <label class="survey-input survey-input-title">
+                                    <span class="pop-sub-text">※ 이월결손금공제제한</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">이월결손금 공제제한 여부</span>
+                                    <input type="checkbox">
+                                </label>
+                            </div>
+                            <label class="survey-box">
+                                <label class="survey-input survey-input-title">
+                                    <span class="pop-sub-text">※ 이월결손금공제제한</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">이월결손금 공제제한 여부</span>
+                                    <input type="date">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">이월결손금 공제제한 여부</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">이월결손금 공제제한 여부</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">이월결손금 공제제한 여부</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">이월결손금 공제제한 여부</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="survey-input">
+                                    <span class="pop-sub-text">이월결손금 공제제한 여부</span>
+                                    <input type="checkbox">
+                                </label>
+                            </div>
+                            <button class="form-btn line-btn purple-btn" onclick="tab5()">경정청구 신청완료</button>
+                    </div>
+                    <!-- 탭6 -->
+                    <div class="tab-box tab6">
+                            <span class="pop-title">
+                                예상 환급금 신청완료!
+                            </span>
+                            <span class="pop-sub-title pop-grey">경정청구 전문 세무사가 직접 검토 후 안내해 드리겠습니다.</span>
+                            <div class="pop-max-contents"> 
+                                <div class="refund-box">
+                                    <div class="refund-amount">
+                                        <span class="purple">
+                                            <span class="count">
+                                                9,999,999,999
+                                            </span>원
+                                        </span><br>
+                                        환급 예상 소요시간 1일 입니다.
+                                    </div>
+                                </div>
+                                <div class="table-box">
+                                    <span class="table-unit">단위 : 원</span>
+                                    <div class="table">
+                                        <div class="table-row">
+                                            <div class="th">구분</div>
+                                            <div class="th">경정청구액</div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="td">구분</div>
+                                            <div class="td">경정청구액</div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="td">구분</div>
+                                            <div class="td">경정청구액</div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="td">구분</div>
+                                            <div class="td">경정청구액</div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="td">구분</div>
+                                            <div class="td">경정청구액</div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div class="td">구분</div>
+                                            <div class="td">경정청구액</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- 탭7 -->
+                    <div class="tab-box tab7">
+                            <span class="pop-title">
+                                경정청구 전문 세무사가 <span class="purple">검수중</span>입니다.
+                            </span>
+                            <span class="pop-sub-title pop-grey">검토가 완료되면 안내해 드리겠습니다.</span>
+                            <div class="pop-max-contents"> 
+                                <div class="refund-box">
+                                    <span class="pop-sub-text">경정청구 결과(예상 환급금)</span>
+                                    <div class="refund-amount">
+                                        <span class="purple">
+                                            <span class="count">
+                                                9,999,999,999
+                                            </span>원
+                                        </span><br>
+                                        환급 받을 수 있습니다.
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="/sub.js"></script>
+</html>
