@@ -82,7 +82,7 @@ input[type="checkbox"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 100%;
   gap: 10px;
   height: 36px;
   -webkit-box-align: center;
@@ -101,6 +101,7 @@ input[type="checkbox"] {
       -ms-flex: 1;
           flex: 1;
   height: 28px;
+  max-width: 120px;
 }
 
 @media (max-width: 768px) {
