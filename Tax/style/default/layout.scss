@@ -47,17 +47,9 @@
                     align-items: center;
                     gap: 13px;
                     cursor: pointer;
-                    &::after{
-                        content: '';
-                        position: absolute;
-                        bottom: -4px;
-                        left: 0;
-                        height: 1px;
-                        background-color: #fff;
-                        display: none;
-                    }
-                    &:hover::after{
-                    display: block;
+                    &:hover{
+                        text-decoration: underline;
+                        text-underline-position: under;
                     }
                 }
             }
@@ -66,6 +58,7 @@
     }
     // 스크롤시
     &.white{
+        border-bottom: 1px solid #F5F5F5;
         background-color: #fff;
         .logo{
             display: block;
@@ -332,7 +325,7 @@
 }
 
 .footer{
-
+    background-color: #fff;
     .fnb{
         border-bottom: 1px solid #e0e0e0;
         .fnb-ul{
@@ -366,6 +359,7 @@
                 .name{
                     font-size: 15px;
                     font-weight: 600;
+                    margin-right: 12px;
                 }
                 .col-line{
                     margin: 0 12px;
@@ -376,6 +370,18 @@
                 padding-top: 10px;
             }
         }
+    }
+    .top-btn{
+        width: 46px;
+        height: 46px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: absolute;
+        right: 50px;
+        bottom: 116px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
     }
 }
 
@@ -506,7 +512,13 @@
 
     //비주얼 섹션
     .visual-sc{
-        height: 80vh;
+        height: 100vh;
+            .visual-title{
+            font-size: 30px;
+            }
+            .text{
+              font-size: 14px;
+            }
         gap: 32px;
         padding-top: 65px;
     }
@@ -611,17 +623,24 @@
             }
         }
     }
+    .footer{
+        padding-bottom: 50px;
+        .company-info-row{
+            font-size: 12px !important;
+        }
+        .top-btn{
+            width: 46px;
+            height: 46px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: absolute;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             bottom: 25px;
+             right: 25px;
+             
+        }
+    }
 }
 
-@media (max-height:568px) {
-    .visual-sc{
-      height: 100vh;
-      .visual-title{
-      font-size: 25px;
-      }
-      .text{
-        font-size: 12px;
-      }
-    }  
-
-}

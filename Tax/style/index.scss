@@ -31,7 +31,7 @@ button:disabled{
     font-weight: 600;
     transition:opacity ease 1.5s, transform ease 1.5s !important;
       &:hover{
-        background-color: #9B8AFB;
+        background-color: #9B8AFB !important;
       }
       &-box{
           display: flex;
@@ -61,6 +61,10 @@ button:disabled{
   display: flex;
   align-items: center;
   justify-content: center; 
+  &:hover{
+      background-color: #F8F9FB;
+  }
+
 }
 .purple-btn{
   color: #7a5af8;
@@ -72,6 +76,10 @@ button:disabled{
   font-size: 14px;
   width: 100%;
   font-weight: 400;
+  &:hover{
+    background-color: #5925DC !important;
+    color: #fff;
+  }
 }
 
 .sub-btn{
@@ -85,7 +93,7 @@ button:disabled{
   color: #5e6066;
   &:hover{
     border-color: #9B8AFB;
-    background-color: #F5F3FF;
+    background-color: #F5F3FF !important;
     color: #5925DC;
   }
 }
@@ -99,11 +107,11 @@ button:disabled{
   font-size: 21px !important;
   &:hover{
     border-color: none;
-    background-color: #fee500;
+    background-color: #fee500 !important;
     color: #000716;
   }
 }
-.logout-btn{
+ .logout-btn,.login-btn{
   background-color: #fff;
   border-radius: 20px;
   height: 27px;

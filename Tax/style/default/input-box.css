@@ -5,35 +5,37 @@ input {
   font-size: 13px;
   height: 42px;
 }
-
-input::-webkit-input-placeholder {
+input:hover {
+  border: 1px solid #9B8AFB;
+  outline: none;
+}
+input:focus {
+  border: 1px solid #9B8AFB;
+  outline: none;
+}
+input::-moz-placeholder {
   color: #8D99A8;
 }
-
 input:-ms-input-placeholder {
   color: #8D99A8;
 }
-
-input::-ms-input-placeholder {
-  color: #8D99A8;
-}
-
 input::placeholder {
   color: #8D99A8;
 }
+input:-moz-read-only {
+  background-color: #F8F9FB;
+}
+input:read-only {
+  background-color: #F8F9FB;
+}
 
-input[type="checkbox"] {
+input[type=checkbox] {
   accent-color: #9482ff;
 }
 
 .input-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 8px;
 }
 
@@ -42,25 +44,15 @@ input[type="checkbox"] {
 }
 
 .input-contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 42px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .input-contents input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .input-contents .input-btn {
   font-size: 14px;
   padding: 0 38px;
@@ -68,38 +60,29 @@ input[type="checkbox"] {
   border-radius: 4px;
   font-weight: 400;
 }
-
-.survey-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  color: #0f1b2a;
+.input-contents .input-btn:hover {
+  background-color: #7A5AF8 !important;
 }
 
+.survey-box {
+  display: flex;
+  flex-wrap: wrap;
+  color: #0f1b2a;
+}
 .survey-box .survey-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   gap: 10px;
   height: 36px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 16px;
 }
-
 .survey-box .survey-input.survey-input-title {
   width: 100%;
   border-bottom: 1px solid #CDD3DD;
 }
-
-.survey-box .survey-input input[type='date'] {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.survey-box .survey-input input[type=date] {
+  flex: 1;
   height: 28px;
   max-width: 120px;
 }
@@ -109,4 +92,3 @@ input[type="checkbox"] {
     width: 100px;
   }
 }
-/*# sourceMappingURL=input-box.css.map */

@@ -8,6 +8,9 @@
         padding: 0 10px;
         background-color: #F8F9FB;
     }
+    &.file-guide{
+        color: #414D5C;
+    }
 }
 .pop-text{
     font-size: 15px;
@@ -21,6 +24,8 @@
 }
 .pop-sub-title{
     font-size: 18px;
+    display: inline-block;
+    font-weight: 400;
 }
 // 공통헤더
 .header{
@@ -245,14 +250,19 @@
     .refund-amount{
         background-color: #F8F9FB;
         border: 1px solid #CDD3DD;
-        font-size: 32px;
-        font-weight: 600;
+        font-size: 25px;
         padding: 30px 0;
         text-align: center;
         border-radius: 4px;
+        line-height: 1.3;
+        .purple{
+            font-size: 30px;
+            font-weight: 600;
+        }
         .count{
             font-size: 35px;
         }
+
     }
 }
 // 탭4 테이블 조정.
@@ -260,6 +270,9 @@
     .table-row{
         >div:first-child{
             max-width: 30%;
+        }
+        &-header{
+            background-color: #F8F9FB;
         }
     }
 }
@@ -341,6 +354,17 @@
             display: inline-block;
             left: 4px;
         }
+        .underscore{
+            text-decoration: none;
+        }
+    }
+    &:hover{
+        .notice-title{
+            .underscore{
+                text-decoration: underline;
+            }
+        }
+
     }
     .notice-date{
         font-size: 11px;
@@ -387,15 +411,15 @@
     padding: 15px 10px;
     font-size: 13px;
     color: #404d5c;
-    max-height: 55vh;
-    overflow-y: auto;
+    // max-height: 55vh;
+    // overflow-y: auto;
     span{
         display: block;
     }
 }
-.txt-14-600{font-size: 14px; color: #192534; margin-bottom: 10px; font-weight: 600; display: block;}
-.txt-14{font-size: 14px; color: #192534; display: block;}
-.txt-13{font-size: 13px; color: #414D5C; display: block;}
+.txt-14-600{font-size: 14px; color: #192534; margin-bottom: 10px; font-weight: 600; display: block;line-height: 1.5;}
+.txt-14{font-size: 14px; color: #192534; display: block;line-height: 1.5;}
+.txt-13{font-size: 13px; color: #414D5C; display: block;line-height: 1.5;}
 .m-b-10{margin-bottom: 10px;}
 .m-b-7{margin-bottom: 7px;}
 .m-b-5{margin-bottom: 5px;}

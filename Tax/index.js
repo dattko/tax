@@ -6,6 +6,11 @@ const vscObjAni = document.querySelectorAll('.visual-sc .obj-ani');
 // 모바일 헤더~
 const gnb = document.querySelector(".gnb");
 const gnbBtn = document.querySelector(".mobile-gnb-btn");
+const topBtn = document.querySelector(".top-btn")
+
+topBtn.addEventListener('click',()=>{
+   window.scrollTo(0,0)
+})
 
 gnbBtn.addEventListener('click', function(){
    gnb.classList.toggle("moblie-gnb")
