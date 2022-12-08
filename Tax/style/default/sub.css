@@ -42,6 +42,7 @@
   font-size: 14px;
 }
 .header.pop-header {
+  border-bottom: 1px solid #F5F5F5;
   background-color: #fff;
 }
 .header.pop-header .header-inner {
