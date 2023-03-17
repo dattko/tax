@@ -137,6 +137,7 @@ input {
   border: 1px solid #cdd3dd;
   z-index: 1;
   &.active {
+    border: 1px solid #9b8afb;
     ul {
       display: block;
     }
@@ -146,7 +147,7 @@ input {
 .select .selected {
   display: flex;
   justify-content: space-between;
-  height: 42px;
+  height: 40px;
   display: flex;
   align-items: center;
   padding: 0 12px;
