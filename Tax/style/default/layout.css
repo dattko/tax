@@ -131,29 +131,10 @@
   transition-delay: 1s;
 }
 .section .reason-li:hover {
-  -webkit-animation: rotate 0.4s ease-in-out forwards;
-          animation: rotate 0.4s ease-in-out forwards;
+  animation: rotate 0.4s ease-in-out forwards;
 }
 .section .wide-img {
   transition: ease-in-out 0.8s;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    rotate: 0deg;
-  }
-  25% {
-    rotate: 6deg;
-  }
-  50% {
-    rotate: 0deg;
-  }
-  75% {
-    rotate: -6deg;
-  }
-  100% {
-    rotate: 0deg;
-  }
 }
 
 @keyframes rotate {

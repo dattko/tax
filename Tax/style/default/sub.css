@@ -1,14 +1,14 @@
 .pop-sub-text {
   font-size: 13px;
-  color: #0F1B2A;
+  color: #0f1b2a;
 }
 .pop-sub-text.line-grey {
   line-height: 43px;
   padding: 0 10px;
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
 }
 .pop-sub-text.file-guide {
-  color: #414D5C;
+  color: #414d5c;
 }
 
 .pop-text {
@@ -16,7 +16,7 @@
 }
 
 .pop-grey {
-  color: #73777A;
+  color: #73777a;
 }
 
 .row {
@@ -42,7 +42,7 @@
   font-size: 14px;
 }
 .header.pop-header {
-  border-bottom: 1px solid #F5F5F5;
+  border-bottom: 1px solid #f5f5f5;
   background-color: #fff;
 }
 .header.pop-header .header-inner {
@@ -55,10 +55,10 @@
   display: none;
 }
 .header.pop-header .gnb-ul {
-  color: #36363D;
+  color: #36363d;
 }
 .header.pop-header .gnb-li:hover::after {
-  background-color: #36363D;
+  background-color: #36363d;
 }
 .header.pop-header .mobile-gnb-btn .mobile-gnb-btn-line {
   background-color: #000;
@@ -117,7 +117,7 @@
   font-weight: 700;
 }
 .tab-state .tab-num.active {
-  background-color: #5925DC;
+  background-color: #5925dc;
   color: #fff;
   border: none;
 }
@@ -137,13 +137,13 @@
   display: flex;
 }
 .tab-box .search-list-box {
-  border-top: 1px solid #CDD3DD;
+  border-top: 1px solid #cdd3dd;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 .tab-box .search-list-box > .pop-sub-text {
-  color: #414D5C;
+  color: #414d5c;
 }
 .tab-box .search-list-box .search-ul {
   max-height: 45vh;
@@ -156,7 +156,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 1px solid #CDD3DD;
+  border-bottom: 1px solid #cdd3dd;
 }
 .tab-box .search-list-box .search-ul .row {
   gap: 7px;
@@ -176,7 +176,7 @@
 .tab-box .search-list-box .search-ul .search-pick {
   font-size: 14px;
   border-radius: 4px;
-  border: 1px solid #CDD3DD;
+  border: 1px solid #cdd3dd;
   background-color: #fff;
   height: 32px;
   width: 100%;
@@ -210,30 +210,18 @@
   border-radius: 50%;
 }
 .tab-box .certification-login-waiting .indicator .dot:first-child {
-  -webkit-animation: indi 0.9s linear infinite;
-          animation: indi 0.9s linear infinite;
+  animation: indi 0.9s linear infinite;
 }
 .tab-box .certification-login-waiting .indicator .dot:nth-child(2) {
-  -webkit-animation: indi 0.9s 0.3s linear infinite;
-          animation: indi 0.9s 0.3s linear infinite;
+  animation: indi 0.9s 0.3s linear infinite;
 }
 .tab-box .certification-login-waiting .indicator .dot:last-child {
-  -webkit-animation: indi 0.9s 0.6s linear infinite;
-          animation: indi 0.9s 0.6s linear infinite;
+  animation: indi 0.9s 0.6s linear infinite;
 }
 .tab-box .certification-login-waiting .indicator-text {
   font-size: 25px;
   text-align: center;
   font-weight: 600;
-}
-
-@-webkit-keyframes indi {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes indi {
@@ -249,8 +237,8 @@
   margin-bottom: 8px;
 }
 .refund-box .refund-amount {
-  background-color: #F8F9FB;
-  border: 1px solid #CDD3DD;
+  background-color: #f8f9fb;
+  border: 1px solid #cdd3dd;
   font-size: 25px;
   padding: 30px 0;
   text-align: center;
@@ -269,7 +257,7 @@
   max-width: 30%;
 }
 .tab-box .table-row-header {
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
 }
 
 .link-box {
@@ -289,7 +277,7 @@
   max-width: 100%;
 }
 .link-box .link-clear {
-  background-color: #F5F3FF;
+  background-color: #f5f3ff;
   color: #7a5af8;
   border-color: #7a5af8;
   font-size: 14px;
@@ -329,16 +317,16 @@
   flex-direction: column;
   gap: 7px;
   padding: 15px 10px;
-  border-top: 1px solid #CDD3DD;
+  border-top: 1px solid #cdd3dd;
 }
 .notice-li:last-child {
-  border-bottom: 1px solid #CDD3DD;
+  border-bottom: 1px solid #cdd3dd;
 }
 .notice-li .notice-title {
   padding-right: 30px;
   line-height: 1.3;
   font-size: 14px;
-  color: #0F1B2A;
+  color: #0f1b2a;
 }
 .notice-li .notice-title img {
   display: inline-block;
@@ -364,22 +352,22 @@
 }
 
 .notice-contents {
-  border-bottom: 1px solid #CDD3DD;
+  border-bottom: 1px solid #cdd3dd;
 }
 
 .pop-inner-header {
-  border-bottom: 1px solid #CDD3DD;
+  border-bottom: 1px solid #cdd3dd;
   cursor: default;
   display: flex;
   flex-direction: column;
   gap: 7px;
   padding: 15px 10px;
-  border-top: 1px solid #CDD3DD;
+  border-top: 1px solid #cdd3dd;
 }
 .pop-inner-header .pop-inner-header-title {
   padding-right: 20px;
   font-size: 14px;
-  color: #0F1B2A;
+  color: #0f1b2a;
   font-weight: 600;
 }
 .pop-inner-header .pop-inner-header-title img {
@@ -388,7 +376,7 @@
 }
 .pop-inner-header .pop-inner-header-date {
   font-size: 11px;
-  color: #8D99A8;
+  color: #8d99a8;
 }
 
 .pop-inner-contents {
@@ -418,7 +406,7 @@
 
 .txt-13 {
   font-size: 13px;
-  color: #414D5C;
+  color: #414d5c;
   display: block;
   line-height: 1.5;
 }
@@ -446,28 +434,29 @@
 table {
   font-size: 13px;
   width: 100%;
-  border: 1px solid #CDD3DD;
+  border: 1px solid #cdd3dd;
   border-collapse: collapse;
-  color: #414D5C;
+  color: #414d5c;
 }
 
 thead {
-  background-color: #EEF1F6;
+  background-color: #eef1f6;
   text-align: center;
 }
 
-th, td {
-  border: 1px solid #CDD3DD;
+th,
+td {
+  border: 1px solid #cdd3dd;
   padding: 10px;
 }
 
 .com-info {
-  border-top: 1px solid #CDD3DD;
+  border-top: 1px solid #cdd3dd;
   padding: 0 10px;
   line-height: 42px;
   font-size: 13px;
   font-weight: 600;
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
 }
 
 @media (max-height: 700px) {
@@ -482,7 +471,7 @@ th, td {
 }
 @media (max-width: 768px) {
   .pop-header {
-    border-bottom: 1px solid #CDD3DD;
+    border-bottom: 1px solid #cdd3dd;
   }
   .pop-header .logo-box {
     display: none;
@@ -512,4 +501,29 @@ th, td {
   .noinfo-sc .noinfo-title {
     margin-bottom: 0 !important;
   }
+}
+.input-box-btn {
+  flex-direction: row !important;
+  align-items: center;
+}
+
+.sign-section .max-container .pop-section-contents .pop-title {
+  margin-bottom: 90px;
+}
+.sign-section .max-container .pop-max-contents .form-btn {
+  margin-top: 10px;
+}
+
+.terms-btn {
+  margin-left: 10px;
+  padding: 0 21px;
+  white-space: nowrap;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #414d5c;
+  height: 28px;
+  border: 1px solid #cdd3dd;
+}
+.terms-btn:hover {
+  background-color: #f5f5f5;
 }

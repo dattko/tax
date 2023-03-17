@@ -1,87 +1,199 @@
-input{
-    border: 1px solid#cdd3dd;
-    padding: 0 10px;
-    border-radius: 4px;
-    font-size: 13px;
-    height: 42px;
-    &:hover{
-        border: 1px solid #9B8AFB;
-        outline: none;
-    }
-    &:focus{
-        border: 1px solid #9B8AFB;
-        outline: none;
-    }
-    &::placeholder{
-        color: #8D99A8;
-    }
-    &:read-only{
-        background-color: #F8F9FB;
-    }
-}
-input[type="checkbox"]{
-    accent-color: #9482ff;
+input {
+  border: 1px solid#cdd3dd;
+  padding: 0 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 42px;
+  &:hover {
+    border: 1px solid #9b8afb;
+    outline: none;
+  }
+  &:focus {
+    border: 1px solid #9b8afb;
+    outline: none;
+  }
+  &::placeholder {
+    color: #8d99a8;
+  }
+  &:read-only {
+    background-color: #f8f9fb;
+  }
 }
 
-.input-box{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.input-title{
-    font-size: 13px;
+.input-title {
+  font-size: 13px;
 }
-.input-contents{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    height: 42px;
+.input-contents {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 42px;
+  flex: 1;
+  input {
     flex: 1;
-    input{
-        flex: 1;
-    }
+  }
 
-    .input-btn{
-        font-size: 14px;
-        padding: 0 38px;
-        height: 42px;
-        border-radius: 4px;
-        font-weight: 400;
+  .input-btn {
+    font-size: 14px;
+    padding: 0 38px;
+    height: 42px;
+    border-radius: 4px;
+    font-weight: 400;
 
-        &:hover{
-            background-color: #7A5AF8 !important;
-        }
+    &:hover {
+      background-color: #7a5af8 !important;
     }
+  }
 }
 //설문지 체크 박스
-.survey-box{
+.survey-box {
+  display: flex;
+  flex-wrap: wrap;
+  color: #0f1b2a;
+  .survey-input {
     display: flex;
-    flex-wrap: wrap;
-    color: #0f1b2a;
-    .survey-input{
-        display: flex;
-        width: 100%;
-        gap: 10px;
-        height: 36px;
-        align-items: center;
-        padding-left: 16px ;
-        &.survey-input-title{
-            width: 100%;
-            border-bottom: 1px solid #CDD3DD;
-        }
-        input[type='date']{
-            flex: 1;
-            height: 28px;
-            max-width: 120px;
-        }
+    width: 100%;
+    gap: 10px;
+    height: 36px;
+    align-items: center;
+    padding-left: 16px;
+    &.survey-input-title {
+      width: 100%;
+      border-bottom: 1px solid #cdd3dd;
     }
+    input[type="date"] {
+      flex: 1;
+      height: 28px;
+      max-width: 120px;
+    }
+  }
+}
+.chk_box {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 13px;
+  color: #414d5c;
+}
+
+/* 기본 체크박스 숨기기 */
+.chk_box input[type="checkbox"] {
+  display: none;
+}
+
+/* 선택되지 않은 체크박스 스타일 꾸미기 */
+.on {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  position: absolute;
+  border: 1px solid #cdd3dd;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+}
+
+/* 선택된 체크박스 스타일 꾸미기 */
+.chk_box input[type="checkbox"]:checked + .on {
+  border: none;
+}
+.on:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.chk_box input[type="checkbox"]:checked + .on:after {
+  display: block;
+}
+.on:after {
+  content: "";
+  //   height: 16px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(/assert/icon/check-arrow.svg);
+}
+
+.select {
+  font-size: 14px;
+  display: inline-block;
+  max-width: 150px;
+  width: 100%;
+  width: 120px;
+  border-radius: 4px;
+  border: 1px solid #cdd3dd;
+  z-index: 1;
+  &.active {
+    ul {
+      display: block;
+    }
+  }
+}
+
+.select .selected {
+  display: flex;
+  justify-content: space-between;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.select .selected .selected-value {
+}
+
+.select .selected .arrow {
+  width: 24px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.select ul {
+  width: calc(100% + 2px);
+  border: 1px solid #cdd3dd;
+  border-radius: 4px;
+  left: -1px;
+  position: absolute;
+  top: calc(100% + 2px);
+  background: #fff;
+  cursor: pointer;
+  display: none;
+}
+.select ul li {
+  line-height: 42px;
+  padding: 0 12px;
+  &:hover {
+    background-color: #f5f3ff;
+  }
+}
+
+.select ul li,
+.select .selected .selected-value {
+  white-space: nowrap; /* 줄바꿈 안함 */
+  overflow: hidden;
+  text-overflow: ellipsis; /* 말줄임 적용 */
 }
 
 // 아이폰 인풋 버튼 있으면이상함.수정
-@media(max-width: 768px){
-    .input-contents {
-        input{
-            width: 100px;
-        }
+@media (max-width: 768px) {
+  .input-contents {
+    input {
+      width: 100px;
     }
+  }
 }
