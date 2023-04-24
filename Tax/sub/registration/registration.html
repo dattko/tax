@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART 경정청구</title>
+    <link rel="stylesheet" href="/tax/style/index.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header pop-header">
+            <div class="header-inner max-container">
+                <div class="logo-box">
+                    <a href="/tax/index.html">
+                        <img src="/tax/assert/icon/logo.svg" class="logo">
+                        <img src="/tax/assert/icon/logo-w.svg" class="logo-w">
+                    </a>
+                </div>
+                <div class="header-btn-box">
+                    <button class="back-btn pc-hide">
+                        <img src="/tax/assert/icon/arrow-back.svg">
+                    </button>
+                    <button class="login-btn line-btn purple-btn mobile-hide" ><a href="/tax/sub/requestForRefund/requestForRefund.html">로그인</a></button>
+                    <span class="logout-btn-box mobile-hide">
+                        <a href="/tax/sub/listPage/myInfo.html">내회사정보</a>
+                        <button class="logout-btn line-btn purple-btn mobile-hide">로그아웃</button>
+                    </span>
+                </div>
+                <div class="gnb pop-gnb">
+                    <div class="mobile-gnb-btn">
+                        <span class="mobile-gnb-btn-line"></span>
+                        <span class="mobile-gnb-btn-line"></span>
+                        <span class="mobile-gnb-btn-line"></span>
+                    </div>
+                    <ul class="gnb-ul">
+                        <li class="gnb-li mobile-hide"><a href="/tax/sub/listPage/qa.html">문의하기</a></li>
+                        <li class="gnb-li mobile-hide"><a href="/tax/sub/listPage/notice.html">공지사항</a></li>
+                        <li class="gnb-li mobile-hide"><a href="/tax/sub/linked/linked.html">인증관리</a></li>
+                        <li class="gnb-li mobile-hide"><a href="/tax/sub/listPage/privacyStatement.html">개인정보취급방침</a></li>
+                        <li class="gnb-li mobile-hide"><a href="/tax/sub/listPage/termsOfService.html">이용약관</a></li>
+                        
+                        <li class="gnb-li pc-hide"><a href="/tax/index.html">서비스 소개</a></li>
+                        <li class="gnb-li pc-hide"><a href="/tax/sub/listPage/notice.html">공지사항</a></li>
+                        <li class="gnb-li pc-hide"><a href="/tax/sub/listPage/qa.html">문의하기</a></li>
+                        <li class="gnb-li pc-hide"><a href="/tax/sub/listPage/termsOfService.html">개인정보취급방침</a></li>
+                        <li class="gnb-li pc-hide"><a href="/tax/sub/listPage/privacyStatement.html">서비스 이용약관</a></li>
+                       <li class="gnb-li pc-hide login-hide"><a href="/tax/sub/requestForRefund/requestForRefundKakaoLogin.html">로그인</a></li>
+                        <li class="gnb-li pc-hide"><a href="/tax/sub/listPage/myInfo.html">내회사정보 </a>
+                            <button class="logout-btn purple-btn">로그아웃</button></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="pop-section">
+            <div class="max-container">
+                <div class="back-btn">
+                    <button class="line-btn ">
+                        <img src="/tax/assert/icon/left-arrow.svg">뒤로가기
+                    </button>
+                </div>
+            
+                <div class="pop-section-contents">
+                    <div class="tab-state">
+                        <span class="tab-num active">1</span>
+                        <span class="dots">
+                            <img src="/tax/assert/icon/dots.svg">
+                        </span>
+                        <span class="tab-num">2</span>
+                        <span class="dots">
+                            <img src="/tax/assert/icon/dots.svg">
+                        </span>
+                        <span class="tab-num">3</span>
+                    </div>
+                    <div class="pop-max-contents">
+                        <div class="tab-box tab1 active">
+                            <span class="pop-title">
+                                공동인증센터 인증서등록
+                            </span>
+                            <div class="pop-max-contents">
+                                  <div class="registration-box">
+                                    <span class="pop-sub-text">회사명 또는 사업자등록번호</span>
+                                    <div class="guide-box border-box">
+                                        <img src="/tax/assert/icon/guide.svg">
+                                        <span class="guide-text">
+                                            금융사 수준의 알고리즘으로 <br>
+                                            암호화되어 안전하게 관리합니다.
+                                        </span>
+                                    </div>
+                                  </div>
+                                  <span class="pop-sub-text">공인인증 프로그램을 설치하셨나요? <span class="underscore purple">다운로드하기</span></span>
+                                  <div class="btn-box">
+                                    <button class="form-btn line-btn">다운로드</button>
+                                    <button class="form-btn purple-btn line-btn" onclick="tab1()">설치완료</button>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="tab-box tab2">
+                            <span class="pop-title">
+                                공동인증센터 인증서등록
+                            </span>
+                            <div class="pop-max-contents">
+                                  <div class="registration-box">
+                                    <span class="pop-sub-text">회사명 또는 사업자등록번호</span>
+                                    <div class="border-box">
+                                        <span class="pop-text">
+                                            SMS로 보내드린 인증코드를 입력하면 등록을 시작합니다.
+                                        </span>
+                                        <div class="input-box">
+                                            <div class="input-contents">
+                                                <span class="input-title">연락처</span>
+                                                <input type="text">
+                                                <button class="form-btn btn">인증번호 발송</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="input-box">
+                                            <div class="input-contents">
+                                                <span class="input-title">인증코드</span>
+                                                <input type="text">
+                                                <button class="form-btn line-btn purple-btn" onclick="tab2()">확인</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-box tab3 ">
+                            <span class="pop-title">
+                                공동인증센터 인증서등록
+                            </span>
+                            <div class="pop-max-contents">
+                                  <div class="registration-box">
+                                    <span class="pop-sub-text">회사명 또는 사업자등록번호</span>
+                                    <div class="guide-box border-box">
+                                        <img src="/tax/assert/icon/guide.svg">
+                                        <span class="guide-text">
+                                            공인인증서가 등록되었습니다.
+                                        </span>
+                                    </div>
+                                  </div>
+                                    <button class="form-btn purple-btn line-btn">설치완료</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="/tax/sub.js"></script>
+</html>
